@@ -1,9 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { use } from 'react';
 import PostBlock from '../common/components/PostBlock';
 import { PostType } from '../common/types/PostTypes';
-import client, { BASE_API_URL, getImageUrl } from '../lib/client';
+import { BASE_API_URL } from '../lib/client';
+
+export const dynamic = 'auto',
+	dynamicParams = true,
+	revalidate = 0,
+	fetchCache = 'auto',
+	runtime = 'nodejs',
+	preferredRegion = 'auto';
 
 async function getPosts() {
 	const res = await fetch(
