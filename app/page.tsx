@@ -18,7 +18,7 @@ export default async function Home() {
 	const posts = await getPosts();
 
 	return (
-		<div className='bg-gray-100 min-h-screen flex justify-center items-center flex-col'>
+		<div className='bg-gray-100 min-h-screen flex justify-center items-center flex-col py-18'>
 			<pre className='bg-white w-fit p-2'>{JSON.stringify(posts, null, 4)}</pre>
 			test
 			<div className='grid grid-cols-3 max-w-5xl w-full gap-4'>

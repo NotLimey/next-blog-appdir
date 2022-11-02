@@ -17,11 +17,8 @@ const PostBlock = (post: PostType) => (
 			/>
 		</div>
 		<p className='text-lg font-semibold'>{post.title}</p>
-		<p>
-			{post.content.slice(0, 200)}
-			{post.content.length > 200 && '...'}
-		</p>
-		<p className='text-sm'>
+		<p className='pb-2'>{post.preamble}</p>
+		<p className='text-sm text-gray-700'>
 			Created: {new Date(post.created).toLocaleDateString()}
 		</p>
 	</Link>

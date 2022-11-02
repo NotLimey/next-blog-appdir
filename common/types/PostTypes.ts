@@ -6,4 +6,5 @@ export type PostType = PBDocumentType & {
     content: string;
     slug: string;
     image: string;
+    preamble: string;
 }
