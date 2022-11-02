@@ -1,6 +1,7 @@
+import { PBDocumentType } from "./PocketBaseTypes";
 
 
-export type PostType = DocumentType & {
+export type PostType = PBDocumentType & {
     title: string;
     content: string;
     slug: string;
